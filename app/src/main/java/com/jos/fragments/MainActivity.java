@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 
                 getSupportFragmentManager().beginTransaction()
                         .add(R.id.fragment_cview,fw)
+                        .attach(fw)
                         .setCustomAnimations(android.R.anim.slide_in_left,android.R.anim.slide_out_right)
                         .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                         .addToBackStack(null)

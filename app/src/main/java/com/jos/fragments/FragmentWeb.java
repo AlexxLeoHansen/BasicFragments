@@ -27,9 +27,9 @@ public class FragmentWeb extends Fragment {
 
     }
 
-    @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        super.onCreateView(inflater, container,savedInstanceState);
 
         View v = inflater.inflate(R.layout.webview_fragment, container, false);
         wv = (WebView) v.findViewById(R.id.webview);
@@ -39,6 +39,11 @@ public class FragmentWeb extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
 
 
         if(getArguments()!=null){

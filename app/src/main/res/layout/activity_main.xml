@@ -9,6 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:clipToPadding="false"
     tools:context="com.jos.fragments.MainActivity">
 
     <RelativeLayout
@@ -19,7 +20,9 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_height="340dp" />
+        android:layout_height="340dp"
+        android:elevation="30dp"
+        />
 
     <android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"
@@ -33,7 +36,8 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="26dp" />
+        android:layout_marginTop="26dp"
+        app:elevation="24dp" />
 
     <RelativeLayout
         android:id="@+id/fragment_enter"
